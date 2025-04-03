@@ -5,6 +5,8 @@ export default class coffeMachine {
 
     coffee() {
         const coffeeMachine = new makeCoffee()
+        const createYourCoffee = document.querySelector('.make-own-coffee-btn');
         coffeeMachine.coffeList();
+        createYourCoffee.addEventListener('click', () => {coffeeMachine.createYourCoffee()})
     }
 }

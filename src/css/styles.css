@@ -17,6 +17,15 @@
 @import url('./back-link.css');
 @import url('./footer.css');
 
+.machine {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+
 .coffeelist {
   display: flex;
   align-items: center;
@@ -188,4 +197,125 @@
 
 .sugar-button:hover {
   background-color: #a0522d;
+}
+
+.make-own-coffee-btn {
+  background: linear-gradient(45deg, #d2691e, #8b4513);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Іконка */
+.make-own-coffee-btn::before {
+  content: "☕";
+  font-size: 22px;
+}
+
+/* Ефект натискання */
+.make-own-coffee-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover ефект */
+.make-own-coffee-btn:hover {
+  background: linear-gradient(45deg, #8b4513, #d2691e);
+}
+
+/* Додатковий глянцевий ефект */
+.make-own-coffee-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.make-own-coffee-btn:hover::after {
+  left: 100%;
+}
+
+
+.hide {
+  display: none;
+}
+
+.custom-coffee-form {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f8f1eb;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.custom-coffee-form label {
+  font-weight: bold;
+  color: #5a3e36;
+  font-size: 14px;
+}
+
+.custom-coffee-form input {
+  padding: 10px;
+  border: 2px solid #b48b7d;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  font-size: 16px;
+  background: #fffaf5;
+}
+
+.custom-coffee-form input:focus {
+  border-color: #8b5e3b;
+  box-shadow: 0px 0px 8px rgba(139, 94, 59, 0.5);
+}
+
+.custom-coffee-form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #8b5e3b;
+  cursor: pointer;
+}
+
+.custom-coffee-form button {
+  background: linear-gradient(45deg, #d2691e, #8b4513);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.custom-coffee-form button:hover {
+  background: linear-gradient(45deg, #8b4513, #d2691e);
+  transform: scale(1.05);
+}
+
+.custom-coffee-form button:active {
+  transform: scale(0.95);
 }
