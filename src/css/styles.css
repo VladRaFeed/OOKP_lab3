@@ -16,3 +16,176 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.coffeelist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.coffee-card {
+  list-style: none;
+  background: #fff8f1;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 250px;
+  text-align: center;
+  padding: 16px;
+}
+
+.coffee-card:hover {
+  transform: translateY(-5px);
+}
+
+.coffee-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffee-title {
+  font-size: 1.5rem;
+  color: #5a3e2b;
+  margin-bottom: 8px;
+}
+
+.coffee-price {
+  font-size: 1.2rem;
+  color: #8b5e3c;
+  margin-bottom: 12px;
+}
+
+.coffee-button {
+  background: #d2691e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.coffee-button:hover {
+  background: #a0522d;
+}
+
+/* styles.css */
+
+.coffee-card-details {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 20px auto;
+}
+
+.coffee-card-title {
+  font-size: 1.5rem;
+  color: #5a3e2b;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.coffee-card-list {
+  list-style: none;
+  padding: 0;
+}
+
+.coffee-card-item {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-card-item p {
+  margin: 0;
+  color: #8b5e3c;
+}
+
+.coffee-card-item:nth-child(odd) {
+  background-color: #fff8f1;
+}
+
+.coffee-card-item:nth-child(even) {
+  background-color: #ffe8d6;
+}
+
+.coffee-card-price {
+  font-weight: bold;
+  color: #d2691e;
+  margin-top: 12px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.makeMoreCoffe {
+  background-color: #ff7f50;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.makeMoreCoffe:hover {
+  background-color: #ff6347;
+  transform: scale(1.05);
+}
+
+.makeMoreCoffe:active {
+  background-color: #e55347;
+}
+
+.sugar-wrapper {
+  text-align: center;
+  background-color: #f8e4c9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.sugar-wrapper p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5a3e2b;
+  margin-bottom: 15px;
+}
+
+.sugar-button {
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 5px;
+}
+
+.sugar-button:hover {
+  background-color: #a0522d;
+}
